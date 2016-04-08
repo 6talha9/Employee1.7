@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<!DOCTYPE hibernate-mapping PUBLIC  
+"-//Hibernate/Hibernate Mapping DTD 5.0//EN"  
+"http://hibernate.sourceforge.net/hibernate-mapping-5.0.dtd">  
+  
+<hibernate-mapping>  
+<class name="model.Employee" table="Employee">  
+          <id name="id">  
+          <generator class="increment"></generator>  
+          </id>  
+            
+
+           <property name="name"></property>
+         
+            
+             <many-to-one name="department" lazy="false" class="model.Department" />  
+            
+          
+         
+        
+</class>
+
+<class name="model.Department" table="Department">  
+          <id name="id">  
+          <generator class="increment"></generator>  
+          </id>  
+  <property name="name"></property>
+    <bag name="employeelst" cascade="all">  
+            <key column="department"></key>  
+           
+          <one-to-many class="model.Employee"/>  
+          </bag>
+          
+        
+
+</class> 
+</hibernate-mapping>

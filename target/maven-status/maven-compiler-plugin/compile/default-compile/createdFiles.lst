@@ -1,6 +1,6 @@
-model/Department.class
-model/EmployeeDao.class
-model/DepartmentDao.class
-cntrlr/DepartmnetCntrlr.class
-cntrlr/HomeCntrlr.class
-model/Employee.class
+main/java/cntrlr/HomeCntrlr.class
+main/java/cntrlr/DepartmnetCntrlr.class
+main/java/model/Employee.class
+main/java/model/DepartmentDao.class
+main/java/model/Department.class
+main/java/model/EmployeeDao.class

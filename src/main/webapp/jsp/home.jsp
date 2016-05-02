@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="java.util.ArrayList,java.util.Iterator,model.Department,model.Employee;"%>
+    pageEncoding="UTF-8" import="java.util.ArrayList,java.util.Iterator,main.java.model.Department,main.java.model.Employee;"%>
 <!DOCTYPE html>
 <html>
 <head>

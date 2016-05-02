@@ -1,4 +1,4 @@
-package cntrlr;
+package main.java.cntrlr;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,11 +13,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-import model.Department;
-import model.DepartmentDao;
+import main.java.model.Department;
+import main.java.model.DepartmentDao;
 
-import model.Employee;
-import model.EmployeeDao;
+import main.java.model.Employee;
+import main.java.model.EmployeeDao;
 
 
 //import org.apache.jasper.tagplugins.jstl.core.Out;
@@ -31,7 +31,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeCntrlr {
 	//static String message;
 	
-		@RequestMapping("/jsp/home.html")
+		@RequestMapping("/jsp/home")
 		public ModelAndView home(HttpServletRequest request,
 				HttpServletResponse res) {
 			ApplicationContext r = new ClassPathXmlApplicationContext(

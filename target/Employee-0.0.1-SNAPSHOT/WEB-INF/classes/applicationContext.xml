@@ -53,10 +53,10 @@
         <property name="sessionFactory" ref="mysessionFactory"></property>  
         </bean>  
           
-        <bean id="EmployeeDao" class="model.EmployeeDao">  
+        <bean id="EmployeeDao" class="main.java.model.EmployeeDao">  
         <property name="template" ref="template"></property>  
         </bean>  
-                    <bean id="DepartmentDao" class="model.DepartmentDao">  
+                    <bean id="DepartmentDao" class="main.java.model.DepartmentDao">  
         <property name="template" ref="template"></property>  
         </bean> 
        

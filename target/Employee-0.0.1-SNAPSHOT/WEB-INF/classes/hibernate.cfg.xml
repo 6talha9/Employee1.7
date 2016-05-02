@@ -5,7 +5,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-5.0.dtd">  
   
 <hibernate-mapping>  
-<class name="model.Employee" table="Employee">  
+<class name="main.java.model.Employee" table="Employee">  
           <id name="id">  
           <generator class="increment"></generator>  
           </id>  
@@ -14,14 +14,14 @@
            <property name="name"></property>
          
             
-             <many-to-one name="department" lazy="false" class="model.Department" />  
+             <many-to-one name="department" lazy="false" class="main.java.model.Department" />  
             
           
          
         
 </class>
 
-<class name="model.Department" table="Department">  
+<class name="main.java.model.Department" table="Department">  
           <id name="id">  
           <generator class="increment"></generator>  
           </id>  
@@ -29,7 +29,7 @@
     <bag name="employeelst" cascade="all">  
             <key column="department"></key>  
            
-          <one-to-many class="model.Employee"/>  
+          <one-to-many class="main.java.model.Employee"/>  
           </bag>
           
         

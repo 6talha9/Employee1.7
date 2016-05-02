@@ -14,14 +14,14 @@
            <property name="name"></property>
          
             
-             <many-to-one name="department" lazy="false" class="model.Department" />  
+             <many-to-one name="department" lazy="false" class="main.java.model.Department" />  
             
           
          
         
 </class>
 
-<class name="model.Department" table="Department">  
+<class name="main.java.model.Department" table="Department">  
           <id name="id">  
           <generator class="increment"></generator>  
           </id>  
